@@ -51,3 +51,7 @@ end
 for n = 1:15
 lnMLI_log(1,n) = n/2.*log(2*pi)+lnLmax_log(1,n)+0.5.*log(det_cov_log(1,n))-n.*log(1500);
 end
+
+scatter (linspace(1,15,15),lnMLI_log)
+hold on
+scatter (linspace(1,15,15),lnMLI_sta)
